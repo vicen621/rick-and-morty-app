@@ -15,7 +15,7 @@ function Search() {
     axios
       .get(
         `https://rickandmortyapi.com/api/character/${
-          isId ? search : `?name=${search.toLowerCase().replace(" ", "+")}`
+          isId ? search : `?name=${search.toLowerCase()}`
         }`
       )
       .then((data) => setChar(isId ? data.data : data.data.results))

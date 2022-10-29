@@ -30,7 +30,7 @@ function Navigation() {
           <Form
             className="d-flex"
             onSubmit={() => {
-              navigate(`/characters/${searchType}/${search}`);
+              navigate(`/characters/${searchType}/${search.replace(" ", "+")}`);
             }}
           >
             <ButtonGroup>
