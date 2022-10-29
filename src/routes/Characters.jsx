@@ -14,7 +14,7 @@ function Characters() {
 
   return (
     <div style={{ backgroundColor: "#3c3f47" }}>
-      <Navigation/>
+      <Navigation />
       {characters ? (
         <div className="grid-container">
           <CharacterDisplay data={characters} />

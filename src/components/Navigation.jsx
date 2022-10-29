@@ -27,7 +27,12 @@ function Navigation() {
             </Nav.Link>
           </Nav>
 
-          <Form className="d-flex" onSubmit={() => {navigate(`/characters/${searchType}/${search}`) }}>
+          <Form
+            className="d-flex"
+            onSubmit={() => {
+              navigate(`/characters/${searchType}/${search}`);
+            }}
+          >
             <ButtonGroup>
               <ToggleButton
                 key="id"
@@ -60,8 +65,7 @@ function Navigation() {
             />
             <Button
               variant="outline-success"
-              as={Link}
-              to={`/characters/${searchType}/${search}`}
+              type="submit"
             >
               Search
             </Button>

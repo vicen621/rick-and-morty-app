@@ -26,7 +26,7 @@ function Home() {
 
   return (
     <div>
-      <Navigation/>
+      <Navigation />
       {characters ? (
         <CharacterDisplay data={characters} />
       ) : (

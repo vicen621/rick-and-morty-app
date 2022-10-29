@@ -1,21 +1,19 @@
 import React from "react";
 import { CircleFill } from "react-bootstrap-icons";
 
-function Status(props) {
-  const { alive, species } = props;
-
+function Status({ alive, species, size = "1em" }) {
   const statusVars = {
     alive: "#55cc44",
     dead: "#d63d2e",
     unknown: "grey",
   };
 
-  const status = statusVars[alive.toLowerCase()];
+  const status = statusVars[alive?.toLowerCase() || "unknown"];
 
   return (
     <div>
-      <CircleFill fill={status} />{" "}
-      <span style={{ textTransform: "capitalize" }}>
+      <CircleFill fill={status} size={size} />{" "}
+      <span id="statusSpan" style={{ textTransform: "capitalize" }}>
         {alive} - {species}
       </span>
     </div>

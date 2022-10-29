@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./NotFound.scss"
+import "./NotFound.scss";
 
 // Credits: https://codepen.io/hkmtqffr/pen/dVPewm
 function NotFound() {
@@ -15,7 +15,9 @@ function NotFound() {
           The page you are trying to search has been <br /> moved to another
           universe.
         </p>
-        <Link className="Link" to="/">GET ME HOME</Link>
+        <Link className="Link" to="/">
+          GET ME HOME
+        </Link>
       </div>
     </div>
   );

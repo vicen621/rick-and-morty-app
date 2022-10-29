@@ -7,7 +7,6 @@ import Navigation from "../components/Navigation";
 
 function Search() {
   const [char, setChar] = useState();
-  const [error, setError] = useState();
   let { searchType, search } = useParams();
   const navigate = useNavigate();
 
