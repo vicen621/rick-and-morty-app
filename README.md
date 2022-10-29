@@ -2,7 +2,10 @@
 
 ## Objectivo
 
-En esta app tengo que consumir la API de rick y morty y poder hacer con ella cartas de cada personaje
+* Consumir la API de rick y morty 
+* Mostrar los personajes en la pagina de `characters`
+* Habilitar una busqueda por ID
+* Usar el package `react-router-dom` para hacer las rutas a las diferentes paginas del proyecto
 
 ## Distribucion de la pagina
 
@@ -10,5 +13,5 @@ En esta app tengo que consumir la API de rick y morty y poder hacer con ella car
 | -- | -- |
 | / | [Home](https://github.com/vicen621/Generacion-T/blob/master/React/rick-and-morty/src/routes/Characters.jsx) |
 | /characters | [Characters](https://github.com/vicen621/Generacion-T/blob/master/React/rick-and-morty/src/routes/Characters.jsx) |
-| /characters/:characterId | TODO |
-| /characters/:characterName | TODO |
+| /characters/:searchType/:search | [Characters](https://github.com/vicen621/Generacion-T/blob/master/React/rick-and-morty/src/routes/Search.jsx) |
+| /404 | [404](https://github.com/vicen621/Generacion-T/blob/master/React/rick-and-morty/src/routes/notFound/NotFound.jsx) |
